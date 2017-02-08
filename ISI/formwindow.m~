@@ -1,0 +1,13 @@
+function [ Window ] = formwindow( typy_of_window, overlap, Nfft, len )
+    switch typy_of_window
+        case 'rectangle'
+            win(1:Nfft + Nfft/8) = 1;
+        case 'triangle'
+            for k = 1 : Nfft + Nfft/8
+                Window
+            end
+        case 'cos'
+    end
+    Window = win;
+end
+
